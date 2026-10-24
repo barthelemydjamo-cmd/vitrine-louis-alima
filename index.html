@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez les produits et services numériques de Louis Alima.">
+  <title>Louis Alima | Solutions numériques</title>
+
+  <style>
+    :root {
+      --bleu: #123c69;
+      --bleu-clair: #eaf3ff;
+      --orange: #ff9f1c;
+      --blanc: #ffffff;
+      --texte: #263445;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f8fc;
+      color: var(--texte);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--blanc);
+      padding: 15px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 2px 12px #0000000d;
+    }
+
+    .logo {
+      color: var(--bleu);
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--bleu);
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 75px 7%;
+      background: linear-gradient(135deg, #123c69, #1768ac);
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 17px;
+    }
+
+    .bouton {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 7px;
+      background: var(--orange);
+      color: #172033;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 50px 7%;
+    }
+
+    section h2 {
+      color: var(--bleu);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .cartes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .carte {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #123c6910;
+    }
+
+    .carte h3 {
+      color: var(--bleu);
+    }
+
+    .contact {
+      background: var(--bleu-clair);
+      text-align: center;
+    }
+
+    footer {
+      padding: 22px;
+      background: #102b46;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    #parametres {
+      background: white;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 25px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 15px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">LOUIS ALIMA</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#profil">Profil</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <h1>Bienvenue dans l'univers numérique de Louis Alima</h1>
+      <p>
+        Découvrez des produits numériques, des services innovants
+        et des solutions adaptées à vos besoins.
+      </p>
+      <a class="bouton" href="#services">Découvrir les services</a>
+    </section>
+
+    <section id="profil">
+      <h2>À propos de Louis Alima</h2>
+      <div class="intro">
+        <p>
+          Bienvenue sur ma vitrine numérique. Cet espace est consacré
+          à la présentation de mes activités, de mes produits et de mes
+          services. Mon objectif est de proposer des solutions utiles,
+          accessibles et adaptées aux besoins de mes clients.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Mes produits et services</h2>
+      <div class="cartes">
+        <article class="carte">
+          <h3>Produits numériques</h3>
+          <p>
+            Découvrez des ressources numériques conçues pour vous
+            accompagner dans vos activités.
+          </p>
+        </article>
+
+        <article class="carte">
+          <h3>Services numériques</h3>
+          <p>
+            Des solutions pratiques pour répondre à vos besoins
+            et faciliter vos projets.
+          </p>
+        </article>
+
+        <article class="carte">
+          <h3>Accompagnement</h3>
+          <p>
+            Contactez-moi pour présenter votre besoin et discuter
+            d'une solution adaptée.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contactez-moi</h2>
+      <p>Vous avez une question ou un projet ? Prenons contact.</p>
+      <p>
+        Remplacez ce texte par le numéro WhatsApp de Louis
+        lorsque ses coordonnées seront confirmées.
+      </p>
+    </section>
+
+    <section>
+      <h2>Zone de personnalisation</h2>
+      <div id="parametres">
+        <p>
+          Cette zone est réservée aux futures améliorations du site :
+          nouveaux services, produits, tarifs, images et coordonnées.
+        </p>
+        <p>
+          Pour le moment, les modifications se font dans le fichier
+          index.html sur GitHub.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="annee"></span> Louis Alima — Vitrine numérique</p>
+  </footer>
+
+  <script>
+    document.getElementById("annee").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+<
